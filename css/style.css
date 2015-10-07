@@ -1,0 +1,62 @@
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+div.wrapper {
+    position: relative;
+}
+
+article.slider {
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+article.slider section {
+  display: block;
+  display: none;
+  height: 500px;
+  width: 100%;
+}
+
+article.slider section:first-child {
+    background: #29aae1 url(../images/slide1.png) fixed center;
+}
+
+article.slider section:nth-child(2) {
+    background: #673090 url(../images/slide2.png) fixed center;
+}
+
+article.slider section:nth-child(3) {
+    background: #6ebe35 url(../images/slide3.png) fixed center;
+}
+
+article.slider section:nth-child(4) {
+    background: #e0a32a url(../images/slide4.png) fixed center;
+}
+
+article.slider section:last-child {
+    background: #c0c0c0 url(../images/slide5.png) fixed center;
+}
+
+p.next, p.prev {
+    color: #f0f0f0;
+    cursor: pointer;
+    font: 20px 'HelveticaNeue-Thin', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 45%;
+    z-index: 999;
+}
+
+p.next:hover, p.prev:hover {
+    color: #fff;
+}
+
+p.next {
+  right: 20px;
+}
+
+p.prev {
+  left: 20px;
+}
